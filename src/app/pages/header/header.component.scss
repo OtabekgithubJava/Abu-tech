@@ -10,6 +10,7 @@ header{
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 
 .brand-text{
@@ -46,4 +47,43 @@ header{
 .left-side, .right-side {
     display: flex;
     gap: 15px; 
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: block; /* Stack items vertically */
+        width: 100%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .brand-text {
+        font-size: 22px; /* Smaller font size for smaller screens */
+        text-align: center; /* Center the brand name */
+        margin-bottom: 10px;
+    }
+
+    .left-side {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px; /* Add some space below the brand */
+    }
+
+    .right-side {
+        display: block;
+        text-align: center;
+    }
+
+    .left-side a, .right-side a {
+        font-size: 16px; /* Adjust link size */
+        margin: 5px 0; /* Add spacing between links */
+    }
+
+    .phone-number {
+        font-size: 14px; /* Adjust phone number font size */
+        padding: 8px 15px;
+    }
 }
