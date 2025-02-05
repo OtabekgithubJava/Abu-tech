@@ -1,0 +1,49 @@
+header{
+    border-bottom: 0.1px solid rgb(223, 207, 207);
+}
+
+
+.container{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand-text{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left-side a{
+    text-decoration: none;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right-side a{
+    text-decoration: none;
+    color: #CBA35C;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.phone-number {  
+    text-decoration: none;
+    color: #CBA35C;
+    border: 1px solid #CBA35C;
+    border-radius: 5px;
+    padding: 5px 10px;  
+    font-size: 15px;
+    margin-top: -3px;
+}
+
+
+
+.left-side, .right-side {
+    display: flex;
+    gap: 15px; 
+}
