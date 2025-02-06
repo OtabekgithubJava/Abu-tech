@@ -14,6 +14,7 @@ import { CoursesComponent } from './pages/courses/courses.component';
 import { LocationComponent } from './pages/location/location.component';
 import { ExamplesCaruselComponent } from './pages/examples-carusel/examples-carusel.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './pages/footer/footer.component';
     CoursesComponent,
     LocationComponent,
     ExamplesCaruselComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

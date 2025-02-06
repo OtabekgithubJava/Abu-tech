@@ -1,61 +1,110 @@
-nav{
+.statistics {
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-}
+    margin: 40px auto;
+    text-align: center;
+  
+    h2 {
+      font-size: 25px;
+      font-weight: 400;
+      color: #333;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+  
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+  
+      .card {
+        background-color: #f3f9fe;
+        border-radius: 12px;
+        padding: 20px;
+        flex: 1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+  
+        h3 {
+          font-size: 28px;
+          color: #2c2c2c;
+          margin-bottom: 10px;
+        }
+  
+        img {
+          width: 140px;
+          height: auto;
+          margin-top: 15px;
+          margin-left: -20px;
+          margin-bottom: -25px;
+        }
 
-h2{
-    font-size: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-}
+        .salary {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          .plar, .spanlar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          
+          .plar p, .spanlar span {
+            margin-bottom: 10px;
+          }       
+          
+          .spanlar span{
+            margin-top: 10px;
+          }
 
-p{
-    color: grey;
-    font-weight: bold;
-    margin-bottom: 7%;
-}
+          .spanlar span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            font-weight: 100;
+            color: #333;
+            margin-bottom: 8px;
+          }          
 
-.cards-section{
-    display: flex;
-    justify-content: space-between;
-}
+        }
+    }
+  
+    @media (max-width: 768px) {
+        .statistics {
+            width: 80%;
+            margin: 20px auto;
+        }
+    
+        .cards {
+            flex-direction: column;
+            width: 338px;
+            margin-left: -35px;
+        }
+    
+        .card {
+            margin-bottom: 20px;
+        }
+    
+        h2, p {
+            text-align: left;
+        }
+    
+        h2 {
+            font-size: 22px;
+        }
+    
+        p {
+            font-size: 14px;
+        }
 
-.card{
-    background-color: #f3f9fe;
-    border-radius: 20px;
-    width: 32%;
-    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
-    text-align: start;
-}
-
-.card p{
-    color: grey;
-    font-size: 15px;
-    margin-bottom: 3%;
-    padding: 0 30px;
-}
-
-.top{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.top i{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8%;
-}
-
-.card h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    font-weight: 2px;
-    padding: 0 30px;
-}
-
-.card i{
-    color: #CBA35C;
-    font-size: 30px;
+        .just{
+            margin-left: -35px;
+        }
+    }    
 }

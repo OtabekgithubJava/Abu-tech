@@ -1,28 +1,16 @@
 <div class="all-container">
-    <h1>Bizning Darslardan Lavhalar</h1>
-    <div class="wiper">
-        <div class="wiper-wrapper">
-            <div class="wiper-item">
-                <img
-                class="wiper__image"
-                src="images/picture1.png"
-                alt="background-image"
-                />
-            </div>
-            <div class="wiper-item active-swipe">
-                <img
-                class="wiper__image"
-                src="images/picture2.png"
-                alt="background-image"
-                />
-            </div>
-            <div class="wiper-item">
-                <img
-                class="wiper__image"
-                src="images/picture3.png"
-                alt="background-image"
-                />
-            </div>
+    <h1 class="carousel-heading">Bizning Darslardan Lavhalar</h1>
+    <div class="carousel-container">
+      <button class="carousel-btn left-btn" (click)="prevImage()">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="carousel">
+        <div *ngFor="let image of images; let i = index" class="carousel-item" [class.active]="i === activeIndex">
+          <img class="carousel-image" [src]="image.src" [alt]="image.alt" />
         </div>
+      </div>
+      <button class="carousel-btn right-btn" (click)="nextImage()">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
-</div>
+  </div>  

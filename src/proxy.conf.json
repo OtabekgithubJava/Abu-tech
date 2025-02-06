@@ -1,6 +1,6 @@
 {
     "/api": {
-      "target": "https://97b1-95-214-211-2.ngrok-free.app",
+      "target": "https://a375-37-110-210-112.ngrok-free.app",
       "secure": false,
       "changeOrigin": true
     }
